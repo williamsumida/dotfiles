@@ -181,7 +181,7 @@ bindsym $mod+r mode "resize"
 #        status_command i3status
 #}
 
-exec --no-startup-id xrandr --output HDMI-1-1 --mode 2560x1080 --rate 74.99 --primary --right-of eDP-1-1 --output eDP-1-1 --mode 1920x1080 --rate 59.98
+exec --no-startup-id xrandr --output HDMI-1-1 --mode 2560x1080 --rate 74.99 --primary --above eDP-1-1 --output eDP-1-1 --mode 1920x1080 --rate 59.98
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 for_window [class="^.*"] border pixel 1
@@ -249,4 +249,4 @@ exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/marra-sherrier-
 exec_always setxkbmap -option 'grp:alt_shift_toggle'
 # Disable middle click paste
 # https://github.com/milaq/XMousePasteBlock
-xmousepasteblock
+exec_always xmousepasteblock

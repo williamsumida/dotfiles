@@ -128,6 +128,60 @@ d/home/williamsumida/Documents/Drones-FMC
 d/home/williamsumida/Repositories/tais-trollando-compilers
 	AnalisadorSemantico.pdf
 5
+d/home/williamsumida/Repositories
+	tais-trollando-compilers
+17
+d/home/williamsumida
+	Repositories
+8
+d/home
+	williamsumida
+1
+d/
+	mnt
+13
+d/mnt
+	system
+2
+d/mnt/system
+	..
+0
+d/mnt
+	boot
+1
+d/mnt/boot
+	..
+0
+d/mnt
+	boot
+1
+d/mnt/boot
+	..
+0
+d/mnt
+	boot
+1
+d/
+	media
+12
+d/media
+	..
+0
+d/
+	media
+12
+d/home/williamsumida
+	Downloads
+4
+d/home/williamsumida/Downloads
+	BonusTutorialDaAtracao.pdf
+3
+d/home/williamsumida
+	Downloads
+4
+d/home/williamsumida/Downloads
+	BonusDaSeducao.pdf
+2
 d
 
 # Right window history (oldest to newest):
@@ -147,6 +201,7 @@ D
 
 # Command line history (oldest to newest):
 :help
+:Q
 :q
 
 # Search history (oldest to newest):

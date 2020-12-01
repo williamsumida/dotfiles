@@ -28,3 +28,12 @@ config add /path/to/file
 config commit -m "A short message"
 config push
 ```
+
+## Extra configuratons
+
+### Giant cursor
+When setting up dual monitors and the cursor looks huge, add the following lines to `/etc/X11/Xresources/x11-common`:
+```
+Xcursor.size: 24
+Xcursor.theme: DMZ-White 
+```
