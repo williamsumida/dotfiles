@@ -37,3 +37,4 @@ When setting up dual monitors and the cursor looks huge, add the following lines
 Xcursor.size: 24
 Xcursor.theme: DMZ-White 
 ```
+Then proceed to restart the machine.
