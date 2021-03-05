@@ -106,16 +106,16 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
+set $ws1 "1 "
+set $ws2 "2 "
+set $ws3 "3 "
+set $ws4 "4 "
+set $ws5 "5 "
+set $ws6 "6 "
+set $ws7 "7 "
+set $ws8 "8 "
+set $ws9 "9 既"
+set $ws10 "10 阮 | ﭮ"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -181,8 +181,10 @@ bindsym $mod+r mode "resize"
 #        status_command i3status
 #}
 
-exec --no-startup-id xrandr --output HDMI-1-1 --mode 2560x1080 --rate 74.99 --primary --above eDP-1-1 --output eDP-1-1 --mode 1920x1080 --rate 59.98
+# exec --no-startup-id xrandr --output HDMI-1-1 --mode 2560x1080 --rate 74.99 --primary --above eDP-1-1 --output eDP-1-1 --mode 1920x1080 --rate 59.98
+exec --no-startup-id xrandr --output HDMI-1-1 --mode 2560x1080 --rate 74.99 --primary --right-of eDP-1-1 --output eDP-1-1 --mode 1920x1080 --rate 59.98 --dpi 210 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
 
 for_window [class="^.*"] border pixel 1
 new_window 1pixel
@@ -245,8 +247,11 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/marra-sherrier-hpx01Hfs9QY-unsplash.jpg
+exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/leaves_plant_green_136320_2560x1080.jpg
 exec_always setxkbmap -option 'grp:alt_shift_toggle'
 # Disable middle click paste
 # https://github.com/milaq/XMousePasteBlock
 exec_always xmousepasteblock
+exec_always --no-startup-id picom -b
+
+
