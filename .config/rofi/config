@@ -1,1 +1,46 @@
-rofi.theme: /usr/share/rofi/themes/purple.rasi
+! Enabled modi
+rofi.modi:                           window,run,ssh
+! Window opacity
+rofi.opacity:                       20
+! Window width
+rofi.width:                         30
+! Number of lines
+rofi.lines:                         4 
+! Number of columns
+rofi.columns:                       1 
+! Font to use
+rofi.font:                          Ubuntu 16
+rofi.color-enabled: true
+!rofi.color-window: #c86155a6
+rofi.color-window: #c82d2441
+rofi.color-normal: #002d2441, #d8dee8, #002f343f, #002f343f, #a685e2
+!rofi.color-normal: #002f343f, #d8dee8, #002f343f, #002f343f, #fe8019
+rofi.color-active: #2f343f, #b48ead, #2f343f, #2f343f, #93e5cc
+rofi.color-urgent: #2f343f, #ebcb8b, #2f343f, #2f343f, #ebcb8b
+! Border width
+rofi.bw:                             1
+! Location on screen
+rofi.location:                       0 
+! Padding
+rofi.padding:                        100 
+! Y-offset relative to location
+rofi.yoffset:                       -175 
+! X-offset relative to location
+rofi.xoffset:                        0
+! Always show number of lines
+rofi.fixed-num-lines:               true 
+! Terminal to use
+rofi.terminal:                       rofi-sensible-terminal
+! Ssh client to use
+rofi.ssh-client:                     ssh
+! Ssh command to execute
+rofi.ssh-command:                    {terminal} -e {ssh-client} {host}
+! Run command to execute
+rofi.run-command:                    {cmd}
+! Command to get extra run targets
+rofi.run-list-command:               
+! Run command to execute that runs in shell
+rofi.run-shell-command:              {terminal} -e {cmd}
+! Command executed on accep-entry-custom for window modus
+rofi.window-command:                 xkill -id {window}
+

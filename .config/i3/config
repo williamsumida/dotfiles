@@ -109,8 +109,8 @@ bindsym $mod+a focus parent
 set $ws1 "1 "
 set $ws2 "2 "
 set $ws3 "3 "
-set $ws4 "4 "
-set $ws5 "5 "
+set $ws4 "4 "
+set $ws5 "5 "
 set $ws6 "6 "
 set $ws7 "7 "
 set $ws8 "8 "
@@ -247,7 +247,8 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/leaves_plant_green_136320_2560x1080.jpg
+# exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/leaves_plant_green_136320_2560x1080.jpg
+exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/ultrawide/9znlrufn5gt61.png
 exec_always setxkbmap -option 'grp:alt_shift_toggle'
 # Disable middle click paste
 # https://github.com/milaq/XMousePasteBlock

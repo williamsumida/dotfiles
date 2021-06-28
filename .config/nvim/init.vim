@@ -6,6 +6,7 @@ call plug#begin()
     Plug 'morhetz/gruvbox'
     Plug 'deoplete-plugins/deoplete-jedi'
     Plug 'chrisbra/Colorizer'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     if has('nvim')
         Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     else
@@ -22,8 +23,8 @@ if &term =~ '256color'
     set t_ut=
 endif
 
-"colorscheme dracula 
-colorscheme gruvbox
+colorscheme dracula 
+"colorscheme gruvbox
 set background=dark
 
 let g:airline#extensions#branch#enabled = 1
@@ -57,5 +58,7 @@ let g:dracula_italic = 0
 highlight Normal ctermbg=None
 
 let mapleader="\<space>"
+
+set clipboard=unnamedplus
 
 :imap jj <Esc> 

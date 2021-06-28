@@ -22,27 +22,26 @@
 background-alt = #444
 foreground = #FFF
 foreground-unfocused = #999
-foreground-alt = #555
+foreground-alt = #2d2441
 primary = #FFB52A
 secondary = #e60053 
 alert = #bd2c40 
 ;gruvbox
-background = #282828
+background = #2d2441
 red = #fb4934
 green = #b8bb26
 yellow = #fabd2f
 blue = #83a598
 purple = #d3869b
-acqua = #8ec07c
-fg = #ebdbb2
+acqua = #c9b1bf
+fg = #c9b1bf
 gray = #928374
-orange = #fe8019
-
+orange = #d3869b
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 30
+height = 25
 ;offset-x = 1%
 ;offset-y = 1%
 ;radius = 6.0
@@ -63,11 +62,11 @@ padding-right = 0
 ;module-margin-left = 1
 ;module-margin-right = 2
 
-font-0 = Inconsolata Nerd Font:size=12:antialias=true;2
-font-1 = Droid Sans Mono:size=12:antialias=true;2
-font-2 = Material Icons:size=12:antialias=true;2
+font-0 = Inconsolata Nerd Font:size=10:antialias=true;2
+font-1 = Droid Sans Mono:size=10:antialias=true;2
+font-2 = Material Icons:size=10:antialias=true;2
 font-3 = Material Design Fonts:size=30;2
-font-4 = Iosevka:size=12:antialias=true;2
+font-4 = Iosevka:size=10:antialias=true;2
 
 modules-left = i3
 modules-center = date 
@@ -96,7 +95,7 @@ accumulate-stats = true
 unknown-as-up = true
 label-connected =%{T0}%downspeed% 
 udspeed-minwidth=3
-label-connected-background = #3c3836
+label-connected-background = #2d2441
 label-connected-padding = 1
 
 [module/upspeed]
@@ -106,7 +105,7 @@ accumulate-stats = true
 unknown-as-up = true
 label-connected =%{T0}%upspeed%
 udspeed-minwidth=3
-label-connected-background = #3c3836
+label-connected-background = #2d2441
 label-connected-padding = 1
 [module/xwindow]
 type = internal/xwindow
@@ -172,7 +171,7 @@ type = internal/cpu
 interval = 2
 label = CPU %percentage:2%%
 label-padding = 1
-label-background = #504945
+label-background = #2d2441
 
 
 [module/memory]
@@ -181,7 +180,7 @@ interval = 2
 format-prefix-foreground = ${colors.fg}
 label = Mem %percentage_used%%
 label-padding = 1
-label-background = #665c54
+label-background = #2d2441
 
 [module/date]
 type = internal/date
@@ -204,7 +203,7 @@ label-volume = VOL %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted = 🔇 muted
-label-muted-foreground = #666
+label-muted-foreground = #2d2441
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
@@ -261,20 +260,20 @@ full-at = 95
 ;format-charging = <animation-charging>  
 format-charging = <animation-charging>   <label-charging>
 format-charging-underline = #55aa55
-format-charging-background = #1d2021
+format-charging-background = #2d2441
 format-charging-padding = 2
 
 ;format-discharging = <animation-discharging>  
 format-discharging = <animation-discharging>   <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
-format-discharging-background = #1d2021
+format-discharging-background = #2d2441
 format-discharging-padding = 2
 
 ;format-full =  
 format-full-prefix = "  "
 ;format-full-prefix-foreground = ${colors.foreground-alt}
 ;format-full-underline = ${self.format-charging-underline}
-format-full-background = #1d2021
+format-full-background = #2d2441
 format-full-padding = 2
 
 ramp-capacity-0 =  
@@ -307,14 +306,15 @@ format-volume = <ramp-volume> <label-volume>
 format-volume-padding = 2
 ;format-volume = <ramp-volume>
 label-muted =   0%
+label-muted-padding = 2
 ;label-muted =  
-label-muted-foreground=#666
+label-muted-foreground=#c9b1bf
 ramp-volume-0 =  
 ramp-volume-1 =  
 ramp-volume-2 =  
-interval = 5
+interval = 1
 use-ui-max = true
-format-volume-background = #282828
+format-volume-background = #2d2441
 
 [module/temperature]
 type = internal/temperature
@@ -327,7 +327,7 @@ format = <ramp> <label>
 format-underline = #f50a4d
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
-format-background = #7c6f64
+format-background = #2d2441
 format-padding = 1
 
 label = %temperature-c%
@@ -387,8 +387,8 @@ interval = 2
 click-left = exec blueberry
 click-right = exec ~/Repositories/polybar-stuff/polybar-bluetooth/toggle_bluetooth.sh
 format-padding = 1
-format-background = #282828
-format-foreground = #ffffff
+format-background = #2d2441
+format-foreground = #c9b1bf
 
 [module/xkeyboard]
 type = internal/xkeyboard
