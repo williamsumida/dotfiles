@@ -1,0 +1,33 @@
+font-size = 10
+font-family = "Monaspace Neon"
+font-style = "Bold"
+bold-is-bright = true
+
+theme = "gruvbox-material"
+theme = "tokyonight-storm"
+theme = "rose-pine-moon"
+theme = "rose-pine-dawn"
+theme = "iTerm2 Dark Background"
+theme = "iTerm2 Pastel Dark Background"
+theme = "Pnevma"
+theme = "catppuccin-mocha"
+
+background = 000000
+cursor-invert-fg-bg
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
+
+background-opacity = 0.9
+
+window-vsync = true
+window-decoration = false
+gtk-wide-tabs = false
+
+window-padding-x = 0
+window-padding-y = 0
+window-padding-balance = false
+
+keybind = ctrl+t=new_tab
+
+confirm-close-surface = false
